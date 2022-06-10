@@ -9,7 +9,7 @@ After cleaning the data and utilizing Pandas to group the data by city type, the
 
 The summary DataFrame includes information related to total rides provided as well as the fares associated with these rides in various city settings. Unsurprisingly, the total number of rides is much higher in the urban cities than it is in suburban or rural areas. The data also reveal that rides in rural areas have a higher average fare per ride and per driver when compared to suburban and urban areas. However, it is important to note that this data may be slightly misleading. It is common practice in the ride share and taxi business to charge a base rate plus a rate per mile and/or time of ride. It is likely that rides in rural areas are both longer and farther compared to urban rides because points of interest are likely to be located further apart. Another possible explanation for the discrepancy could simply be the relationship between supply and demand. Rural areas are likely to have a lower supply of available drivers and consequently this could lead to higher prices due to higher realtive demand. 
 
-In addition the summary DataFrame, the following multiple line plot was also produced:
+In addition to the summary DataFrame, the following multiple line plot was also produced:
 
 ![line_graph](https://user-images.githubusercontent.com/104606662/172986130-a62a04e4-d168-4aa4-93ec-b355e9baa4c8.png)
 

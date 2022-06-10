@@ -1,2 +1,24 @@
-# pyber-analysis
-DABC Module 5 - analysis of ride share data using pandas and matplotlib
+# Analysis of PyBer Ride Share Data Utilizing Matplotlib
+Click here to view the analysis file: https://github.com/tylerah/pyber-analysis/blob/main/PyBer_Challenge.ipynb
+## Overview of the Analysis
+The purpose of this analysis was to provide a breakdown of the PyBer ride share data. Specifically, the client was interested in a how the rideshare data compares across the three city types in which PyBer operates. These city types are: rural, suburban, and urban. Using pandas and jupyter notebook capabilities, a DataFrame was created to easily compare various pieces of data across these city types. This DataFrame included information such as: total rides provided, total fares received, the average fare per ride, total drivers, and average fare per driver. Additionally, matplotlib was utililized to provide a visual trendline of the fares in each region type over the months of January through April. 
+## Results
+After cleaning the data and utilizing Pandas to group the data by city type, the following summary DataFrame was produced:
+
+![data_frame](https://user-images.githubusercontent.com/104606662/172984347-eceaab17-8956-46c6-b6a1-0fec43a0f333.png)
+
+The summary DataFrame includes information related to total rides provided as well as the fares associated with these rides in various city settings. Unsurprisingly, the total number of rides is much higher in the urban cities than it is in suburban or rural areas. The data also reveal that rides in rural areas have a higher average fare per ride and per driver when compared to suburban and urban areas. However, it is important to note that this data may be slightly misleading. It is common practice in the ride share and taxi business to charge a base rate plus a rate per mile and/or time of ride. It is likely that rides in rural areas are both longer and farther compared to urban rides because points of interest are likely to be located further apart. Another possible explanation for the discrepancy could simply be the relationship between supply and demand. Rural areas are likely to have a lower supply of available drivers and consequently this could lead to higher prices due to higher realtive demand. 
+
+In addition the summary DataFrame, the following multiple line plot was also produced:
+
+![line_graph](https://user-images.githubusercontent.com/104606662/172986130-a62a04e4-d168-4aa4-93ec-b355e9baa4c8.png)
+
+This visualization allows for the comparison of fares between city type (rural, suburban, urban) over a four month period. In general, this line plot shows the same relationship between city type (highest total fares in urban areas and lowest total fares in rural areas) as the summary DataFrame. It also reveals that the general trend over time for all three areas in relatively similar. In general, fares tend to fluctuate throughout the month and growth is steadily increasing. There isn't a huge net increase in rural areas, but urban and suburban areas have experienced a net positive increase in fares over the four month period. The most notable difference is in the month of April where urban and rural areas experienced a slight decrease while suburban fares increased sharply. 
+
+## Summary
+The first recommendation for PyBer would be to gather more data before making any significant business decisions. Data related to length of ride and time of ride might account for the differences seen between the average fare in each city type. If this is the case, it would be important to have such data before changing and/or commiting to any particular business strategy or marketing efforts. It is possible that PyBer already has this data available. In this case, a simple analysis could be performed relatively quickly. If this data is not available, it would be wise to gather it over the next few months in order to gain further insight into what is impacting the avearage fare in each region. 
+
+The second recommendation is to take a closer look at what happened during the month of April. April is the only month where the overall trend between each city setting is not comparable. During this month, rural and urban areas experienced a slight decrease in total fares while suburban settings experienced a sharp increase. Research into the cause of this difference may provide insight into new potential strategies for increasing total fares. 
+
+The final recommendation would be to take a closer look at the individual peaks in each trendline. Do these peaks correspond with any particular event? Likely candidates that could explain these peaks are weekends and/or popular events such as concerts. Once potential events are identified, PyBer could plan to have more drivers available in order to increase the likelihood that individuals seeking ride share choose PyBer instead of their competitors. Taking advantage of these natural surges could lead to greater total fares. 
+
